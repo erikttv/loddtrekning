@@ -10,7 +10,7 @@ function addname(){
         liste.push([name, antall]);
     }
     let text = document.getElementById('personer').innerHTML;
-    text += `<p onclick="removename(this.id)" id="`+name+`">Navn: `+name+` Antall: `+antall+`</p>`;
+    text += `<p onclick="removename(this.id)" id="`+name+`">Navn: `+name+`, Antall: `+antall+`</p>`;
     document.getElementById('personer').innerHTML = text;
     document.getElementById('antall').value = '';
     document.getElementById('navn').value = '';
